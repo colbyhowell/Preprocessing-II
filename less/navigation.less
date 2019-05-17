@@ -10,11 +10,13 @@ header{
         align-items: center;
         justify-content: space-between;
         height: 75px;
+
+        @media @mobile {
+            display: flex;
+            flex-flow: column;
+            
     }
     
-    @media @mobile {
-        display: flex;
-        flex-flow: column;
     }
 
     h1{

@@ -1,1 +1,48 @@
 // Mixins in here
+
+.desktop-width{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.border-800{
+    border-bottom: 2px dashed @silver;
+    .desktop-width;
+}
+
+.button1{
+    margin-bottom: 3%;
+    background-color: @eastern-blue;
+    color: white;
+    padding: 5%;
+    font-size: 2rem;
+    border: 1px solid @silver;
+    border-radius: 15px;
+    text-align: center;
+
+    @media @mobile{
+        margin-bottom: 3%;
+        background-color: @eastern-blue;
+        color: white;
+        padding: 3%;
+        font-size: 2rem;
+        border: 1px solid @silver;
+        border-radius: 15px;
+        text-align: center;
+      }
+}
+
+.flex-center{
+        display: flex;
+        justify-content: center;
+}
+
+.left-right-margin{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mobile-margins{
+    margin-left: 2%;
+    margin-right: 2%;
+}

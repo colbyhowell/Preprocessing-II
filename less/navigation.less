@@ -1,12 +1,16 @@
 // Navigation Styles here
 
 header{
-    display: flex;
-    border-bottom: 2px dashed @silver;
-    align-items: center;
-    justify-content: space-between;
-    height: 8%;
-    .desktop-width;
+    border-bottom: 2px dashed @silver;  
+    
+
+    > div{
+        .desktop-width;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 75px;
+    }
     
     @media @mobile {
         display: flex;

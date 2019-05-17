@@ -174,13 +174,10 @@ table {
 }
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 html,
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100%;
-  width: 100%;
 }
 h1,
 h2,
@@ -211,18 +208,18 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
-  height: 100%;
   margin: 0 auto;
 }
 header {
-  display: flex;
   border-bottom: 2px dashed #C0C0C0;
-  align-items: center;
-  justify-content: space-between;
-  height: 8%;
+}
+header > div {
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
 }
 @media ( max-width: 500px ) {
   header {
@@ -289,8 +286,6 @@ header .nav-bar a:hover {
 .footer {
   border-top: 2px dashed silver;
   background: #FFEBCD;
-  position: absolute;
-  bottom: -50%;
   width: 100%;
   height: 5%;
 }
